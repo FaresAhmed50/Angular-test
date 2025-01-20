@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import {StarComponent} from '../star/star.component';
 
 @Component({
-  selector: 'app-about-us',
-  imports: [],
-  templateUrl: './about-us.component.html',
-  styleUrl: './about-us.component.css'
+  selector: 'app-about',
+  imports: [
+    StarComponent
+  ],
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.css'
 })
-export class AboutUsComponent {
+export class AboutComponent {
 
 }
