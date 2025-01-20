@@ -1,12 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {FooterComponent} from './footer/footer.component';
+import {RouterOutlet} from '@angular/router';
+import {NavComponent} from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  host: {'id' : 'main-root'},
+  imports: [
+
+    FooterComponent,
+    RouterOutlet,
+    NavComponent,
+
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Angular-ass';
+  title = 'Angular-Ass';
 }

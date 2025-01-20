@@ -3,13 +3,13 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
 
 
 @Component({
-  selector: 'app-nav',
+  selector: 'app-header',
   imports: [
     RouterLink,
     RouterLinkActive
   ],
-  templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
 export class NavComponent {
 

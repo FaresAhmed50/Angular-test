@@ -6,8 +6,8 @@ import {StarComponent} from '../star/star.component';
   imports: [
     StarComponent
   ],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  templateUrl: './about-us.component.html',
+  styleUrl: './about-us.component.css'
 })
 export class AboutComponent {
 
