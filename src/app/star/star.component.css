@@ -1,5 +1,17 @@
+.text-dark {
+  color: black;
+}
 
-i::after{
+.text-white {
+  color: white;
+}
+
+/*:host(){*/
+/*  --bg-color: var(--bgcolor);*/
+/*}*/
+
+
+i::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -7,9 +19,8 @@ i::after{
   transform: translateY(-50%);
   width: 18%;
   height: 5px;
-  background-color: white;
+  background-color: white; /* can't find a way to change the background color using var from Ts */
   z-index: 0;
-
 }
 
 
