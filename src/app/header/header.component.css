@@ -1,0 +1,12 @@
+.navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+
+.bg-body-tertiary {
+  background-color: var(--secondery-color) !important;
+}
+
+.Active{
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
