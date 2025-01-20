@@ -1,1 +1,50 @@
-<p>portdolio works!</p>
+
+
+<section class="bg-white ">
+  <div class=" container ">
+    <div class="py106">
+
+      <div class="row py-5">
+        <div class="offset-3 col-md-6 text-center ">
+
+          <h1>portfolio component</h1>
+          <app-star/>
+
+        </div>
+      </div>
+
+      <div class="row gy-4 ">
+
+        @for (image of images; track $index ; let last = $last){
+
+          <div class="col-md-6 col-lg-4 Portfolio__img mb-4 mb-sm-4">
+            <div class="position-relative overflow-hidden rounded-4 me-2"  [ngClass]="{'mb-3': last}">
+              <img [src]="image" class="w-100">
+              <figure class="mb-0">
+                <figcaption class="position-absolute  img__overlay-Portfolio  ">
+                  <div class="img__overlay-content position-absolute top-50 start-50 translate-middle">
+                    <button type="button" data-bs-toggle="modal" [attr.data-bs-target]="'#' + image"  class="btn btn-outline-light">
+                      <i class="fa-solid fa-plus fa-6x"></i>
+                    </button>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="modal fade" [id]="image" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img [src]="image" class="w-100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
